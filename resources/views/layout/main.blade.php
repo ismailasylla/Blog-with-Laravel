@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     @include('partials._head')
-    <body>
+    <body id="page-top">
 
         @include('partials._navbar')
         @yield('content')
-        <hr>
-        @include('partials._footer')
+        {{--@include('partials._footer')--}}
         @include('partials._javascript')
 
     </body>

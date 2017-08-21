@@ -12,7 +12,7 @@
                <hr class="my-4">
                <p>This is My blog site created with Laravel.</p>
                <p class="lead">
-                   <a class="btn btn-primary btn-lg" href="#" role="button">Popular Post</a>
+                   <a class="btn btn-success btn-lg" href="#" role="button">Popular Post</a>
                </p>
            </div>
        </div>
@@ -23,19 +23,19 @@
                 <div class="post">
                     <h3>Post Title</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aspernatur consequatur corporis delectus ducimus eius error, maiores modi molestias numquam perspiciatis quo rerum sit sunt, suscipit tempora vitae voluptatum!</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-success">Read More</a>
                 </div>
                 <hr>
                 <div class="post">
                     <h3>Post Title</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aspernatur consequatur corporis delectus ducimus eius error, maiores modi molestias numquam perspiciatis quo rerum sit sunt, suscipit tempora vitae voluptatum!</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-success">Read More</a>
                 </div>
                 <hr>
-                <div class="post">
+                <div class="post" id="about">
                     <h3>Post Title</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aspernatur consequatur corporis delectus ducimus eius error, maiores modi molestias numquam perspiciatis quo rerum sit sunt, suscipit tempora vitae voluptatum!</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-success">Read More</a>
                 </div>
             </div>
             {{--side bar--}}
