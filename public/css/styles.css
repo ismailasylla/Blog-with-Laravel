@@ -1,0 +1,24 @@
+#contact{
+    padding-top:20px;
+}
+
+/*footer section*/
+
+footer {
+    /* just for demo */
+    background-color: #080808;
+    color: #fff;
+    /*border-top: 1px solid #E7E7E7;*/
+    border-color: #101010;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+
+    /* just for demo */
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
