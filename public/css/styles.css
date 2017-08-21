@@ -62,8 +62,8 @@ Follow me on Twitter @maridlcrmn
 .btn.btn-outline { background-color: transparent; }
 
 .navbar-nav.navbar-right .btn:not(.collapsed) {
-    background-color: rgb(111, 84, 153);
-    border-color: rgb(111, 84, 153);
+    background-color: rgb(245, 134, 26);
+    border-color: rgb(231, 227, 239);
     color: rgb(255, 255, 255);
 }
 
@@ -104,8 +104,25 @@ Follow me on Twitter @maridlcrmn
         transform: translate(0px,0px);
     }
 }
-
+/*navbar*/
 #navim{
     padding-left: 0px;
     padding-right: 0px;
 }
+
+/*icon rotate navbar logo */
+
+.logo{
+
+
+    /*  padding: 5px;*/
+    /*border-radius: 50%;*/
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+

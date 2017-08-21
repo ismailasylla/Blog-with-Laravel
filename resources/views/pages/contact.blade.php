@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container"  style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12">
                 <h1>Contact Me</h1>
@@ -58,7 +58,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                            <button type="submit" class="btn btn-warning pull-right" id="btnContactUs" style="background-color: #f5861a">
                                                 Send Message</button>
                                         </div>
                                     </div>
