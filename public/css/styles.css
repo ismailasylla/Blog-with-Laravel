@@ -3,6 +3,15 @@ body{
 
 }
 
+.post-btn{
+    margin-top: 18px;
+
+}
+.form-spacing-top{
+    margin-top: 30px;
+
+}
+
 #contact{
     padding-top:20px;
 }
@@ -125,4 +134,7 @@ Follow me on Twitter @maridlcrmn
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
+
+
 
