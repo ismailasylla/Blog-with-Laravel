@@ -25,7 +25,7 @@
 
                         <div class="form-group">
 
-                            {!! Form::submit('Create Post', ['class'=>'btn btn-success btn-lg btn-block']) !!}
+                            {!! Form::submit('Create Post', ['class'=>'btn btn-warning btn-lg btn-block ']) !!}
 
                         </div>
 

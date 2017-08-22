@@ -3,6 +3,13 @@ body{
 
 }
 
+.btn-orange{
+    background-color: #f5861a;
+
+}
+.btn-border{
+    border-color: #f5861a;
+}
 .post-btn{
     margin-top: 18px;
 

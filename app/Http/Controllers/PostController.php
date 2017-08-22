@@ -102,7 +102,25 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // validate the data
+        $this->validate($request,array(
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ));
+
+        // save the data to the database
+        $post = Post::find($id);
+
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+
+        $post->save();
+
+        // set flash data with success message
+        Session::flash('success','Post Was Successfully Saved!');
+
+        // redirect with flash to data posts.show
+         return redirect()->route('posts.show',$post->id);
     }
 
     /**
@@ -113,6 +131,16 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //finding the post to be deleted by using the correct id number
+        $post = Post::find($id);
+
+        //deleting the post form the database
+        $post->delete();
+
+        //displaying the confirmation of the deleted post to the user
+        Session::flash('success','Post Was Successfully deleted!');
+
+        //redirecting to the index page after deleting the post
+        return redirect()->route('posts.index');
     }
 }

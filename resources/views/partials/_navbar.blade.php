@@ -23,7 +23,7 @@
                     {{--<li><a href="#">News</a></li>--}}
                     <li><a href="/contact"><i class="fa fa-envelope-o" aria-hidden="true"> Contact</i></a></li>
                     <li>
-                        <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+                        <a class="btn btn-default btn-outline btn-circle collapsed  btn-border"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
                     </li>
                 </ul>
                 <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
