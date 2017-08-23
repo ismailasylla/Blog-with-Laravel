@@ -7,6 +7,12 @@ body{
     background-color: #f5861a;
 
 }
+
+.btn-create-post{
+    float: left;
+
+}
+
 .btn-border{
     border-color: #f5861a;
 }

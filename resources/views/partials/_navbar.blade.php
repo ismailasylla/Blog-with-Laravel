@@ -10,13 +10,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><i class="fa fa-rss" aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px;"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Emmet Tecnology</i></a>
+                <a class="navbar-brand" href="/"><i class="fa fa-home" aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px;"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Emmet Tecnology</i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-3">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/"><i class="fa fa-home" aria-hidden="true"> Home</i></a></li>
+                    <li><a href="/blog"><i class="fa fa-rss" aria-hidden="true"> Blog</i></a></li>
                     <li><a href="/about"><i class="fa fa-map-marker" aria-hidden="true"> About</i></a></li>
                     {{--<li><a href="#">Services</a></li>--}}
                     {{--<li><a href="#">Works</a></li>--}}
@@ -25,6 +26,19 @@
                     <li>
                         <a class="btn btn-default btn-outline btn-circle collapsed  btn-border"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
                     </li>
+
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li class="dropdown" style="margin-right: -42px">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"> My Account </i><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"> Login</i></a></li>
+                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"> Sign-UP</i></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"> Logout</i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </ul>
                 <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
                     <form class="navbar-form navbar-right" role="search">
