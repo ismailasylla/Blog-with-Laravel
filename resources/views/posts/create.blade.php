@@ -13,8 +13,18 @@
 
                             {!! Form::label('title','Title:') !!}
                             {!! Form::text('title', null, ['class'=>'form-control','required'=>'','maxlength'=>'255']) !!}
+
                             {{Form::label('slug','Slug:')}}
                             {{Form::text('slug', null, array('class'=>'form-control','required'=>'','minlenght'=>'5','maxlenght'=>'255'))}}
+
+                            {{Form::label('category_id','Category:')}}
+                            <select name="category_id" id="" class="form-control">
+
+                                @foreach($categories as $category)
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                @endforeach
+
+                            </select>
 
                         </div>
 
