@@ -4,7 +4,7 @@
 @section('content')
 
         <div class="jumbotron">
-           <h1 class="display-3">Welcome To My Bolg!</h1>
+           <h1 class="displa">Welcome To My Bolg!</h1>
            <p class="lead">Thank you for visiting.</p>
            <hr class="my-4">
            <p>This is My blog site created with Laravel.</p>
