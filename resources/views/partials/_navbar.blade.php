@@ -52,11 +52,15 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
+                                        <li><a href="/blog"><i class="fa fa-rss" aria-hidden="true"> Posts</i></a></li>
+                                        <li><a href="{{route('categories.index')}}"><i class="fa fa-circle-thin" aria-hidden="true"> Categories</i></a></li>
+                                    <li role="separator" class="divider"></li>
+                                      <li>
+                                          <a href="{{ route('logout') }}"
+                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="fa fa-sign-out" aria-hidden="true"> Logout</i>
-
-                                        </a>
+                                          </a>
+                                      </li>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}

@@ -25,7 +25,10 @@ Route::group(['middleware' => ['web']], function(){
 
     Route::resource('posts', 'postController');
 
-});
-Auth::routes();
+    Route::resource('categories','CategoryController',['only'=>['create','index','store']]);
 
-Route::get('/admin', 'HomeController@index')->name('home');
+    Auth::routes();
+
+    Route::get('/admin', 'HomeController@index')->name('home');
+
+});
