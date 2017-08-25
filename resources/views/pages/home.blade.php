@@ -9,7 +9,7 @@
            <hr class="my-4">
            <p>This is My blog site created with Laravel.</p>
            <p class="lead">
-               <a class="btn btn-warning btn-lg btn-orange" href="#" role="button">Popular Post</a>
+               <a class="btn btn-warning btn-lg btn-orange" href="#" role="button" onclick="valid()">Popular Post</a>
            </p>
         </div>
 
@@ -31,6 +31,29 @@
             </div>
             {{--end sidebar--}}
         </div>
+
+
+        <script type="text/javascript">
+
+
+
+            function valid() {
+
+
+                swal({
+                    title: "Sweet ;)",
+                    text: "Click below to create an account.",
+                    imageUrl: "../../images/user.png"
+                });
+                document.getElementById("momo").href = "http://blog.dev/login";
+            }
+
+
+
+
+        </script>
+
+
 
 
 @endsection

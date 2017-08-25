@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/contact/contact.css">
     <link rel="stylesheet" href="../../css/parsley.css">
     <link rel="stylesheet" href="../../css/scrolling-nav.css">
+    <link rel="stylesheet" href="../../css/sweetalert.css">
     <title>
         {{--<img alt="Brand" src="../images/icon.png">--}}
         Blog @yield('title')

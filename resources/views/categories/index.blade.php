@@ -30,7 +30,7 @@
                     {{Form::label('name', 'Name:')}}
                     {!! Form::text('name',null,['class'=>'form-control']) !!}
 
-                    {!! Form::submit('Create New Category',['class'=>'btn btn-warning btn-orange btn-lg form-spacing-top ']) !!}
+                    {!! Form::submit('Create New Category',['class'=>'btn btn-warning btn-orange btn-lg form-spacing-top'],['onclick="valid();"']) !!}
 
                 {!! Form::close() !!}
             </div>

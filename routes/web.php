@@ -26,6 +26,7 @@ Route::group(['middleware' => ['web']], function(){
     Route::resource('posts', 'postController');
 
     Route::resource('categories','CategoryController',['only'=>['create','index','store']]);
+    Route::resource('tags','TagController',['except'=>['create']]);
 
     Auth::routes();
 

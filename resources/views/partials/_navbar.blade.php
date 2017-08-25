@@ -54,6 +54,7 @@
                                     <li>
                                         <li><a href="/posts"><i class="fa fa-rss" aria-hidden="true"> Posts</i></a></li>
                                         <li><a href="{{route('categories.index')}}"><i class="fa fa-circle-thin" aria-hidden="true"> Categories</i></a></li>
+                                        <li><a href="{{route('tags.index')}}"><i class="fa fa-tags" aria-hidden="true"> Tags</i></a></li>
                                     <li role="separator" class="divider"></li>
                                       <li>
                                           <a href="{{ route('logout') }}"
