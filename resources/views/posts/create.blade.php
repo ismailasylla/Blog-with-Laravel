@@ -11,13 +11,13 @@
 
                         <div class="form-group">
 
-                            {!! Form::label('title','Title:') !!}
+                            {!! Form::label('title','Title:',['class'=> 'form-spacing-top']) !!}
                             {!! Form::text('title', null, ['class'=>'form-control','required'=>'','maxlength'=>'255']) !!}
 
-                            {{Form::label('slug','Slug:')}}
+                            {{Form::label('slug','Slug:',['class'=> 'form-spacing-top'])}}
                             {{Form::text('slug', null, array('class'=>'form-control','required'=>'','minlenght'=>'5','maxlenght'=>'255'))}}
 
-                            {{Form::label('category_id','Category:')}}
+                            {{Form::label('category_id','Category:',['class'=> 'form-spacing-top'])}}
                             <select name="category_id" id="" class="form-control">
 
                                 @foreach($categories as $category)
@@ -26,20 +26,20 @@
 
                             </select>
 
-                        </div>
+                            {{Form::label('tags','Tags:',['class'=> 'form-spacing-top'])}}
 
-                        <div class="form-group">
+                            <select name="tags" class="form-control select2-multi" multiple="multiple">
+                                @foreach($tags as $tag)
+                                    <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                @endforeach
+                            </select>
 
-                            {!! Form::label('body','Body:') !!}
+                            {!! Form::label('body','Body:',['class'=> 'form-spacing-top']) !!}
                             {!! Form::textarea('body', null, ['class'=>'form-control','required'=>'','maxlength'=>'255']) !!}
 
-                        </div>
-
-                        <div class="form-group">
-
                             {!! Form::submit('Create Post', ['class'=>'btn btn-warning btn-lg btn-block ']) !!}
-
                         </div>
+
 
                 {!! Form::close() !!}
             </div>

@@ -22,6 +22,12 @@
 
             </select>
 
+            {{Form::label('tags','Tags:',['class'=> 'form-spacing-top'])}}
+            {{Form::select('tags[]',$tags ,null,['class'=>'select2-multi form-control input-lg','multiple'=>'multiple'])}}
+
+
+
+
             {!! Form::label('title','Body:',['class'=>'form-spacing-top'])!!}
             {!! Form::textarea('body', null,['class'=>'form-control input-lg'])!!}
 
@@ -53,5 +59,17 @@
         </div>
         {!! Form::close() !!}
     </div>{{--end of the .row form--}}
+
 @endsection
 
+@section('scripts')
+
+    {!! Html::script('js/select2.min.js') !!}
+
+    <script type="javascript">
+
+        {{--$(".select2-multi").select2().val({!! json_encode($post->tags())!!}).trigger('change');--}}
+        $(".select2-multi").select2().val({!! json_encode($post->tags()->getRelated()->id )!!}).trigger('change');
+    </script>
+
+    @stop
