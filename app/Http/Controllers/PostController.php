@@ -171,6 +171,7 @@ class PostController extends Controller
     {
         //finding the post to be deleted by using the correct id number
         $post = Post::find($id);
+        $post->tags()->detach();
 
         //deleting the post form the database
         $post->delete();

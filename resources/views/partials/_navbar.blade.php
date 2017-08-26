@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><i class="fa fa-home" aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px;"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Orange Mali</i></a>
+                <a class="navbar-brand" href="/"><i class="fa fa-home"  aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px; color:#f5861a"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Orange Mali</i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

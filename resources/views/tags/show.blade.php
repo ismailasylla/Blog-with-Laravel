@@ -22,6 +22,7 @@
                         <th>Title</th>
                         <th>Tags</th>
                         <th></th>
+                        <th></th>
                     </tr>
                 </thead>
 
@@ -37,9 +38,16 @@
                                 @endforeach
                             </td>
 
+
                             <td>
                                 <a href="{{route('posts.show', $post->id)}}" class="btn btn-default btn-small btn-border">View</a>
                                 <a href="{{route('tags.edit', $tag->id)}}" class="btn btn-default btn-small btn-border" >Edit</a>
+                            </td>
+
+                            <td>
+                                {{Form::open(['route'=>['tags.destroy', $tag->id],'method'=>'DELETE'])}}
+                                    {{Form::submit('Delete',['class'=>'btn btn-danger btn-small btn-border  btn-block'])}}
+                                {{Form::close()}}
                             </td>
 
                         </tr>
