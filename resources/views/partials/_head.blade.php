@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../../css/scrolling-nav.css">
     <link rel="stylesheet" href="../../css/sweetalert.css">
     <link rel="stylesheet" href="../../css/select2.min.css">
+    {{--<script src="../../../js/tinymce.min.js"></script>--}}
+    {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>--}}
+    @yield('stylesheets')
     <title>
         {{--<img alt="Brand" src="../images/icon.png">--}}
         Blog @yield('title')

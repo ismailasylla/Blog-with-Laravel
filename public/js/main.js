@@ -3,7 +3,6 @@ $(".select2-multi").select2();
 
 // slider
 
-
 $('#myCarousel').carousel();
 var winWidth = $(window).innerWidth();
 $(window).resize(function () {
@@ -19,6 +18,16 @@ $(window).resize(function () {
             'min-width': '', 'width': ''
         });
     }
+});
+
+// tinymce script
+
+tinymce.init({
+    selector:'textarea',
+    plugins:'link media image',
+    menubar:false
+
+
 });
 
 

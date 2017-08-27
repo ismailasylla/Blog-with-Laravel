@@ -66,7 +66,7 @@ class CommentsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $comment =Comment::find($id);
+        $comment = Comment::find($id);
         $this->validate($request, array(
             'comment' => 'required'
         ));

@@ -1,6 +1,10 @@
 @extends('layout.main')
 @section('title','|Create New Post')
 
+@section('stylesheets')
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yyrh41vbl0m8raesho8thrit5lv3gtlh4wxjivsdegss9hw6"></script>
+@stop
+
 @section('content')
        <div class="container" style="margin-top: -50px">
            <div class="row">
@@ -34,8 +38,8 @@
                            @endforeach
                        </select>
 
-                       {!! Form::label('body','Body:',['class'=> 'form-spacing-top']) !!}
-                       {!! Form::textarea('body', null, ['class'=>'form-control','required'=>'','maxlength'=>'255']) !!}
+                       {!! Form::label('body','Post Body:',['class'=> 'form-spacing-top']) !!}
+                       {!! Form::textarea('body', null, ['class'=>'form-control']) !!}
 
                        {!! Form::submit('Create Post', ['class'=>'btn btn-warning btn-lg btn-block form-spacing-top']) !!}
                    </div>
