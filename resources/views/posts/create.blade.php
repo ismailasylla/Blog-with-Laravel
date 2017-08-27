@@ -11,7 +11,7 @@
                <div class="col-md-8 col-md-offset-2">
                    <h1>Create New post</h1>
                    <hr>
-                   {!! Form::open(['method'=>'POST','action'=>'postController@store','data-parsley-validate'=>'']) !!}
+                   {!! Form::open(['method'=>'POST','action'=>'postController@store','data-parsley-validate'=>'','files' =>true]) !!}
 
                    <div class="form-group">
 
@@ -37,6 +37,9 @@
                                <option value="{{$tag->id}}">{{$tag->name}}</option>
                            @endforeach
                        </select>
+
+                       {{Form::label('featured_image','Upload Featured Image:')}}
+                       {{Form::file('featured_image')}}
 
                        {!! Form::label('body','Post Body:',['class'=> 'form-spacing-top']) !!}
                        {!! Form::textarea('body', null, ['class'=>'form-control']) !!}

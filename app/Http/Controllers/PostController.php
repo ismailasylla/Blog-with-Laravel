@@ -8,6 +8,7 @@ use App\Tag;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Intervention\Image\Facades\Image;
 use Mews\Purifier\Facades\Purifier;
 
 //use Mews\Purifier\Purifier;
@@ -63,6 +64,18 @@ class PostController extends Controller
         $post->slug        =  $request->slug;
         $post->category_id = $request->category_id;
         $post->body        = Purifier::clean($request->body);
+
+        //save our featured image
+        if($request->hasFile('featured_image')){
+                $image = $request->file('featured_image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                $location = public_path('images/' .$filename);
+                Image::make($image)->resize(800,400)->save($location);
+
+                $post->image = $filename;
+
+
+        }
 
         $post->save();
         $post->tags()->sync($request->tags, false);
