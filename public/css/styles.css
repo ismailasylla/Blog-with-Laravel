@@ -1,8 +1,11 @@
 body{
     margin-bottom: 20px;
+    margin-right: 10px;
 
 }
-
+.nav-btno{
+    margin-top: -10px;
+}
 
 .btn-orange{
     background-color: #f5861a;
@@ -71,7 +74,13 @@ Follow me on Twitter @maridlcrmn
 
 .navbar-brand { position: relative; z-index: 2; }
 
-.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+.navbar-nav.navbar-right .btn {
+    position: relative;
+    z-index: 2;
+    padding: 4px 20px;
+    margin: 10px auto;
+    transition: transform 0.3s;
+}
 
 .navbar .navbar-collapse { position: relative; overflow: hidden !important; }
 .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
@@ -149,6 +158,82 @@ Follow me on Twitter @maridlcrmn
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
+
+.logi-home:hover {
+    color: #fff;
+    text-shadow: 0 0 100px ,
+    0 0 100px #666,
+    0 0 100px #666,
+    0 0 100px #666,
+    0 0 100px #666,
+    0 0 50px #000,
+    0 0 50px #000,
+    0 0 50px #000,
+    0 0 50px #000,
+    0 0 50px #000;
+    /*transition*/
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 2.5s ease-in-out infinite alternate;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+
+}
+
+/*slider */
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+/*navbar*/
+
+
+.navborder{
+    border-bottom-color: #f5861a !important;
+    border-style: solid;
+
+}
+.carborder{
+    border-color: #f5861a !important;
+    border-style: solid;
+}
+
+/*carousel*/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: 400px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
+}
+
+
 
 
 

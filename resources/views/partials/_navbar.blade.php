@@ -1,6 +1,6 @@
 <div class="container-fluid" id="navim">
     <!-- Second navbar for search -->
-    <nav class="navbar-fixed-top navbar-inverse">
+    <nav class="navbar-fixed-top navbar-inverse navborder">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><i class="fa fa-home"  aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px; color:#f5861a"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Orange Mali</i></a>
+                <a  class="navbar-brand logi-home" href="/"><i class="fa fa-home"  aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px; color:#f5861a"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Orange Mali</i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,9 +23,6 @@
                     {{--<li><a href="#">Works</a></li>--}}
                     {{--<li><a href="#">News</a></li>--}}
                     <li><a href="/contact"><i class="fa fa-envelope-o" aria-hidden="true"> Contact</i></a></li>
-                    <li>
-                        <a class="btn btn-default btn-outline btn-circle collapsed  btn-border"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
-                    </li>
 
                     {{--<ul class="nav navbar-nav navbar-right" >--}}
                         {{--<li class="dropdown" style="margin-right: -42px">--}}
@@ -39,11 +36,11 @@
                         {{--</li>--}}
                     {{--</ul>--}}
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" style="margin-bottom: -30px;">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}"><i class="fa fa-sign-in" aria-hidden="true"> Login</i></a></li>
-                            <li><a href="{{ route('register') }}"><i class="fa fa-user-plus" aria-hidden="true" style="margin-right: -100px"> Register</i></a></li>
+                            <li class="nav-btno"><a href="{{ route('login') }}"><i class="fa fa-sign-in btn  btn-warning btn-orange " aria-hidden="true"> Login</i></a></li>
+                            <li class="nav-btno" style="margin-left: -20px ; float: left"><a href="{{ route('register') }}"><i class="fa fa-user-plus btn btn-warning btn-orange" aria-hidden="true" style="margin-right: -100px"> Register</i></a></li>
                         @else
                             <li class="dropdown" style="margin-right: -42px">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -71,14 +68,18 @@
                             </li>
                         @endif
                     </ul>
+                    <li>
+                        <a class="btn btn-default btn-outline btn-circle collapsed  btn-border"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+                    </li>
 
                 </ul>
                 <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
+
                     <form class="navbar-form navbar-right" role="search">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search" />
                         </div>
-                        <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a;z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </form>
                 </div>
             </div><!-- /.navbar-collapse -->
