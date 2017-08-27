@@ -8,18 +8,30 @@
         <div class="col-md-8 col-md-offset-2">
             <h1>{{$post->title}}</h1>
             <p>{{$post->body}}</p>
-            <hr>
             <b>Posted in: <small class="badge">{{$post->category->name}}</small></b>
         </div>
     </div>
 
-
     <div class="row form-spacing-top">
         <div class="col-md-8 col-md-offset-2">
+            <hr>
+            <h2 class="badge badge-warning btn-orange comment-title"><i class="fa fa-comments" aria-hidden="true"> {{$post->comments()->count()}} Comments</i></h2>
             @foreach($post->comments as $comment)
+
                 <div class="comment">
-                    <p> <strong>Name:</strong> {{$comment->comment}}</p>
-                    <p> <strong>Comment:</strong> <br>{{$comment->comment}}</p><br>
+                   <div class="author-info">
+                       <img src="{{"https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=mm"}}" alt="" class="author-image">
+
+                       <div class="author-name">
+                            <h4>{{$comment->name}}</h4>
+                            <p class="author-time">{{date('F nS, Y - G:i' ,strtotime($comment->created_at))}}</p>
+                       </div>
+                   </div>
+
+                        <div class="comment-content">
+                            {{$comment->comment}}
+                        </div>
+
                 </div>
 
             @endforeach
