@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Post;
 use App\Tag;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Mews\Purifier\Facades\Purifier;
 
-
+//use Mews\Purifier\Purifier;
 
 
 class PostController extends Controller
@@ -60,7 +62,7 @@ class PostController extends Controller
         $post->title       = $request->title;
         $post->slug        =  $request->slug;
         $post->category_id = $request->category_id;
-        $post->body        = $request->body;
+        $post->body        = Purifier::clean($request->body);
 
         $post->save();
         $post->tags()->sync($request->tags, false);
@@ -142,7 +144,7 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->category_id = $request->input('category_id');
         $post->slug = $request->input('slug');
-        $post->body = $request->input('body');
+        $post->body = Purifier::clean($request->input('body'));
 
         $post->save();
 
