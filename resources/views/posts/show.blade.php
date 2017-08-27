@@ -18,6 +18,38 @@
                    @endforeach
                </div>
 
+                <div id="backend-comments" style="margin-top: 50px;">
+                    <h3>Comments <small>{{$post->comments()->count()}} total</small></h3>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                            <th>Comment</th>
+                            <th style="width: 70px;"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($post->comments as $comment)
+                          <tr>
+                            <td><b>{{$comment->name}}</b></td>
+                            <td>{{$comment->email}}</td>
+                            <td>{{$comment->comment}}</td>
+
+                              <td>
+                                  <a href="{{route('comments.edit', $comment->id)}}" class="btn btn-default  btn-border btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                  <a href="{{route('comments.delete', $comment->id)}}" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                              </td>
+
+                          </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+
             </div>
 
         <div class="col-md-4">

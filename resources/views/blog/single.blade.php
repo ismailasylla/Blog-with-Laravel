@@ -15,7 +15,7 @@
     <div class="row form-spacing-top">
         <div class="col-md-8 col-md-offset-2">
             <hr>
-            <h2 class="badge badge-warning btn-orange comment-title"><i class="fa fa-comments" aria-hidden="true"> {{$post->comments()->count()}} Comments</i></h2>
+            <h2 class="badge badge-warning btn-orange comment-title"><i class="fa fa-comment" aria-hidden="true"></i> {{$post->comments()->count()}} Comments</h2>
             @foreach($post->comments as $comment)
 
                 <div class="comment">
