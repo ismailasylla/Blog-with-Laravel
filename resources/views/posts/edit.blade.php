@@ -1,6 +1,8 @@
 @extends('layout.main')
 @section('title','|Edit-Blog-Post')
-
+@section('stylesheets')
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yyrh41vbl0m8raesho8thrit5lv3gtlh4wxjivsdegss9hw6"></script>
+@stop
 @section('content')
     <div class="row">
         {!! Form::model($post,['route'=>['posts.update',$post->id],'method'=>'PUT']) !!}
