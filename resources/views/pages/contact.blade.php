@@ -15,7 +15,7 @@
             {{--</div>--}}
         {{--</div>--}}
     {{--</div>--}}
-    <div class="container">
+    <div class="container col-md-12">
         <div class="row">
             <div class="col-md-8">
                 <div class="well well-sm">

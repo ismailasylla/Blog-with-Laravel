@@ -29,6 +29,9 @@ Route::group(['middleware' => ['web']], function(){
     Route::resource('categories','CategoryController',['only'=>['create','index','store']]);
     Route::resource('tags','TagController',['except'=>['create']]);
 
+    //comments route
+    Route::post('comments/{post_id}',['uses'=>'CommentsController@store', 'as'=>'comments.store']);
+
     Auth::routes();
 
     Route::get('/admin', 'HomeController@index')->name('home');
