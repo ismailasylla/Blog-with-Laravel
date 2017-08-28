@@ -8,7 +8,11 @@
                     <div class="panel-heading">User Dashboard</div>
 
                     <div class="panel-body">
-                        Your Are Now Login as <strong>USER</strong>.
+                        @component('components.who')
+
+
+
+                        @endcomponent
                     </div>
                 </div>
             </div>

@@ -8,7 +8,9 @@
                     <div class="panel-heading">Admin Dashboard</div>
 
                     <div class="panel-body">
-                        Your Are Now Login as <strong>ADMIN</strong>.
+                        @component('components.who')
+
+                        @endcomponent
                     </div>
                 </div>
             </div>
