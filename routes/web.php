@@ -38,6 +38,8 @@ Route::group(['middleware' => ['web']], function(){
 
     Auth::routes();
 
-    Route::get('/admin', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/admin', 'AdminController@index')->name('admin');
+
 
 });
