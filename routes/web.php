@@ -37,9 +37,18 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('comments/{id}/delete',['uses'=>'CommentsController@delete', 'as'=>'comments.delete']);
 
     Auth::routes();
-
     Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/admin', 'AdminController@index')->name('admin');
+
+
+    Route::prefix('admin')->group(function(){
+
+        Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+        Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+        Route::get('/', 'AdminController@index')->name('admin.dashboard');
+
+});
+
+
 
 
 });
