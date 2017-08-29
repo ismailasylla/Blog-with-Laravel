@@ -24,6 +24,10 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/contact', 'pagesController@getContact');
     Route::post('/contact', 'pagesController@postContact');
 
+    Route::resource('/posts', 'postController');
+
+    Route::resource('/categories','CategoryController',['only'=>['create','index','store']]);
+    Route::resource('/tags','TagController',['except'=>['create']]);
 
 
     //comments route
@@ -50,10 +54,6 @@ Route::group(['middleware' => ['web']], function(){
 //        Route::post('/password/reset','Auth\AdminResetPasswordController@reset');
 //        Route::get('/password/reset{token}','Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');
 
-        Route::resource('/posts', 'postController');
-
-        Route::resource('/categories','CategoryController',['only'=>['create','index','store']]);
-        Route::resource('/tags','TagController',['except'=>['create']]);
 
 });
 

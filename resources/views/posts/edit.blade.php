@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @extends('layouts.admin-main')
-=======
-@extends('layouts.app')
->>>>>>> ae46ea15f91e3c99abb5f7a12cd0f1068f42970a
 @section('title','|Edit-Blog-Post')
 @section('stylesheets')
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yyrh41vbl0m8raesho8thrit5lv3gtlh4wxjivsdegss9hw6"></script>
