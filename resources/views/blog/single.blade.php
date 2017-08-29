@@ -41,7 +41,6 @@
         </div>
     </div>
 
-
     <div class="row">
         <div id="comment-form" class="col-md-8 col-md-offset-2 form-spacing-top">
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('layouts.admin-main')
+=======
+@extends('layouts.app')
+>>>>>>> ae46ea15f91e3c99abb5f7a12cd0f1068f42970a
 
 @section('title', '|Post View')
 
