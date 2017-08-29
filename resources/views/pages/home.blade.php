@@ -21,31 +21,31 @@
                 <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="item"> <img src="images/b1.png" style="width:100%" alt="First slide">
+                <div class="item"> <img src="images/promo/promo-1.jpg" style="width:100%" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Reparer Vos Ordinateurs </h1>
-                            <p>Nous Maintenons Vos Machines en vie </p>
-                            <p><a class="btn btn-lg btn-warning" href="#" role="button">Prendre Rendez Vous </a></p>
+                            {{--<h1>Reparer Vos Ordinateurs </h1>--}}
+                            {{--<p>Nous Maintenons Vos Machines en vie </p>--}}
+                            <p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="item"> <img src="images/b2.png" style="width:100%" data-src="" alt="Second    slide">
+                <div class="item"> <img src="images/promo/promo-2.jpg" style="width:100%" data-src="" alt="Second    slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Repareation Smarte Phones </h1>
-                            <p>Vous avez un Probleme avec Votre Smart Phones ?
-                                <br> Ne paniquez pas Nous Avons la Solution</p>
-                            <p><a class="btn btn-lg btn-warning" href="#" role="button">Prendre Rendez Vous</a></p>
+                            {{--<h1>Repareation Smarte Phones </h1>--}}
+                            {{--<p>Vous avez un Probleme avec Votre Smart Phones ?--}}
+                                {{--<br> Ne paniquez pas Nous Avons la Solution</p>--}}
+                            <p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="item active"> <img src="images/b3.png" style="width:100%" data-src="" alt="Third slide">
+                <div class="item active"> <img src="images/promo/promo-3.jpg" style="width:100%" data-src="" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Maintenance et Service</h1>
-                            <p>Le bien Fonctionement de vos Machine Nous est Prioritaire </p>
-                            <p><a class="btn btn-lg btn-warning" href="#" role="button">Contactez Nous</a></p>
+                            {{--<h1>Maintenance et Service</h1>--}}
+                            {{--<p>Le bien Fonctionement de vos Machine Nous est Prioritaire </p>--}}
+                            <p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>
                         </div>
                     </div>
                 </div>

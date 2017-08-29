@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.admin-main')
 @section('title','|Edit-Blog-Post')
 @section('stylesheets')
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yyrh41vbl0m8raesho8thrit5lv3gtlh4wxjivsdegss9hw6"></script>

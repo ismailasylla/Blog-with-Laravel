@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.admin-main')
 
 @section('content')
     <div class="container text-center">
