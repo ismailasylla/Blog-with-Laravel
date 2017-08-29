@@ -33,41 +33,38 @@
                     </a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-bottom: -30px;">
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                        <li class="nav-btno"><a href="{{ route('login') }}"><i class="fa fa-sign-in btn  btn-warning btn-orange " aria-hidden="true"> Login</i></a></li>
+                        <li class="nav-btno" style="margin-left: -20px ; float: left"><a href="{{ route('register') }}"><i class="fa fa-user-plus btn btn-warning btn-orange" aria-hidden="true" style="margin-right: -100px"> Register</i></a></li>
+                    @else
+                        <li class="dropdown" style="margin-right: -42px">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                <li><a href="/posts"><i class="fa fa-rss" aria-hidden="true"> Posts</i></a></li>
+                                <li><a href="{{route('categories.index')}}"><i class="fa fa-circle-thin" aria-hidden="true"> Categories</i></a></li>
+                                <li><a href="{{route('tags.index')}}"><i class="fa fa-tags" aria-hidden="true"> Tags</i></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-sign-out" aria-hidden="true"> Logout</i>
+                                    </a>
+                                </li>
 
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
-                    </ul>
-                </div>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
+                </ul>
             </div>
         </nav>
 
